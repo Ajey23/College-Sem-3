@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using namespace std;
 #include<iostream>
 
@@ -43,3 +44,12 @@ int main()
 {
     
 }
+=======
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[
+>>>>>>> d4b91291fb938c4e4777bb28d57cccdf89c44fa4
