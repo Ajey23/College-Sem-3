@@ -1,7 +1,7 @@
-/* Write a program in C++ which checks whether the given matrix is a sparse matrix or not 
-        Take user inputs for matrix and size of row and column of matrix.
-        Make 2 method is SparseMatrix : check and display whether the given matrix is sparse matrix,
-        AddElements: Take user input*/
+/*
+ Write a program in C++ which checks whether the given matrix is a sparse matrix or not 
+ Take user inputs for matrix and size of row and column of matrix.
+*/
 
 #include<iostream>
 using namespace std;
@@ -16,7 +16,7 @@ int main()
 	
 	int Matrix[i][j];
 	
-	cout << "\n Enter the Sparse Matrix\n";
+	cout << "\n Enter the Sparse Matrix ";
 	for(rows = 0; rows < i; rows++)	
 	{
 		for(columns = 0; columns < i; columns++) 

@@ -8,7 +8,7 @@ int main()
     {
             for(j=0; j<2; j++) 
             {
-                cin<<a[i][j];
+                cin>>a[i][j];
             }
 
     }
@@ -18,7 +18,7 @@ int main()
             {
                 //b=[i][j]=a[j][i];
                 //cout<<b[i][j]
-                cout>>a[j][i]<<" "; //logic 
+                cout<<a[j][i]<<" "; //logic 
             }
 
     }

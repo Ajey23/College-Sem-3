@@ -1,0 +1,133 @@
+NAME:SARODE AJAY
+ROLL NO:B02
+ENROLLMENT NO:202100319010098
+ASSIGNMENT1
+DBMS-2
+
+CREATE TABLE Employee1
+(E_ID VARCHAR(40) PRIMARY KEY, 
+Name VARCHAR(50),
+Age VARCHAR(20),
+Address VARCHAR(50),
+Join_Date DATE NOT NULL,
+Leave_Date DATE,
+Salary NUMERIC(50));
+
+
+INSERT INTO Employee1 VALUE ("101","Akshay","22","Ahmedabad","2015-06-22","2022-08-30","22000");
+
+INSERT INTO Employee1 VALUE ("102","Deep","24","SURAT","2017-03-12","2021-05-22","25000");
+
+INSERT INTO Employee1 VALUE ("103","Nisha","26","Delhi","2015-04-22","2020-07-15","27000");
+
+INSERT INTO Employee1 VALUE ("104","Bhavik","20","Ahmedabad","2017-05-10","2022-06-23","21000");
+
+INSERT INTO Employee1 VALUE ("105","Sanaya","27","Chandigarh","2010-06-12","2022-05-30","28000");
+
+INSERT INTO Employee1 VALUE ("106","Prisha","29","Ahmedabad","2010-07-22","2021-06-12","30000");
+
++------+--------+------+------------+------------+------------+--------+
+| E_ID | Name   | Age  | Address    | Join_Date  | Leave_Date | Salary |
++------+--------+------+------------+------------+------------+--------+
+| 101  | Akshay | 22   | Ahmedabad  | 2015-06-22 | 2022-08-30 |  22000 |
+| 102  | Deep   | 24   | SURAT      | 2017-03-12 | 2021-05-22 |  25000 |
+| 103  | Nisha  | 26   | Delhi      | 2015-04-22 | 2020-07-15 |  27000 |
+| 104  | Bhavik | 20   | Ahmedabad  | 2017-05-10 | 2022-06-23 |  21000 |
+| 105  | Sanaya | 27   | Chandigarh | 2010-06-12 | 2022-05-30 |  28000 |
+| 106  | Prisha | 29   | Ahmedabad  | 2010-07-22 | 2021-06-12 |  30000 |
++------+--------+------+------------+------------+------------+--------+
+
+1. Display length of name and city of each employee.
+		SELECT LENGTH(Name), LENGTH(Address) FROM Employee1;
+
+2. Change name of city to lower case using two ways.
+		SELECT LCASE (Address) FROM Employee1;
+
+3. Change name of city to upper case using two ways.
+		SELECT UCASE (Address) FROM Employee1;
+
+4. Extract first four characters from each name. 
+		SELECT SUBSTR(Name,1,4) FROM Employee1;
+
+5. Extract last four characters from each name. 
+		SELECT SUBSTR(Name,4) FROM Employee1;
+
+6. Extract four characters of each name from 2nd position using substr function.
+		SELECT SUBSTR(Name,2,4) FROM Employee1;
+
+7. Dispaly the name and city in one column.
+		SELECT CONCAT(Name,' ',Address) AS NEW FROM Employee1;
+
+8. Replace the “ana” with “aa” in the name column.
+		SELECT REPLACE (Name,'ana','aa') FROM Employee;
+
+9. Display the city and name in reverse order.
+ 		SELECT REVERSE(Name),REVERSE(Address) FROM Employee1;
+
+10. Display the ASCII value of name.
+		SELECT ASCII(Name) AS NEW FROM Employee1;
+
+11. Display the first occurance “a” in the name column.
+		SELECT Name, INSTR(Name,'a') FROM Employee1;
+
+12. Display the details of employee in ascesnding order acording to name.
+		SELECT Name FROM Employee1 ORDER BY Name;
+
+13. Display the details of employee in descending order acording to city.
+		SELECT Address FROM Employee1 ORDER BY Address DESC;
+
+
+
+Math
+1. Display the maximum , minimum , average , total of the salary from employee table.
+		SELECT MAX(Salary), MIN(Salary), AVG(SALARY), SUM(Salary) FROM Employee1;
+
+2. Display the mod of the age.
+		SELECT MOD(Age,2) FROM Employee1;
+
+3. Diplay the difference of ceil , floor and round with apropriate example.
+		SELECT CEIL(30.75) AS CEIL, FLOOR(30.75) AS FLOOR, ROUND(30.50) AS ROUND;
+
+4. Generate the random number with appropiate funtion.
+		SELECT RAND();
+
+5. Display the total number of records.
+		SELECT COUNT(*) FROM Employee1;
+
+6. Display the salary with the increment of power 2.
+		UPDATE Employee1 SET Salary=Salary*0.2;
+
+
+
+
+
+Date
+1. Display duration in days for which employee has worked.
+		SELECT DATEDIFF(Join_Date, Leave_Date) FROM Employee1;
+
+2. Display Eid, name, joinddate and abbreviated week day name of each joindate.
+		SELECT E_ID, Name, DATE_FORMAT(Join_Date, "%a") FROM Employee1;
+
+3. Display Eid, Ename, joinddate and abbreviated full and half month name of each joindate.
+		SELECT E_ID, Name, DATE_FORMAT(Join_Date, "%b") FROM Employee1;
+
+4. Display the details of the employee whose joining year is greater than 2010.
+		SELECT *FROM Employee1 WHERE Join_Date>2010;
+
+5. Display the date and time from the system.
+		SELECT SYSDATE();
+
+6. Display the current date.
+		SELECT CURDATE();
+
+7. Extract the month and year from date of leaving.
+		SELECT EXTRACT(MONTH FROM Leave_Date) AS Year, EXTRACT(YEAR FROM Leave_Date) AS Month FROM Employee1;
+
+8. Display the details of emloyee with month name , weekname , year in 4 digits.
+		SELECT DATE_FORMAT(Join_Date,"%b %M %W") AS FORMATTED_DATE FROM Employee1;
+
+
+
+
+
+

@@ -22,10 +22,10 @@ int main()
     }
     if ( counterForZero > ((4*3)/2))
     {
-        cout<<" yes it is sparce " <<counterForZero;
+        cout<<" yes it is sparse " <<counterForZero;
     }
     else
     {
-                cout<<"\n NO it is sparce\n " <<counterForZero;
+                cout<<"\n Not a sparse\n " <<counterForZero;
     }
 }
