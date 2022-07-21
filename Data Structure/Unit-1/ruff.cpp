@@ -1,28 +1,26 @@
-//write a program that will display array in reverse order.
-
+//write a program to print an array in reverse order
 #include<iostream>
 using namespace std;
 int main()
 {
 	int n;
-	cout<<"Enter array of elements : ";
+	cout<<"Enter number of elements ";
 	cin>>n;
 	int a[n];
-	//consider n as user input value
+	//suppose we have n number of elements
 	for(int i=0; i<n; i++)
 	{
 		cin>>a[i];
 	}
-
-	cout<<"Before swapping ";
+	
+	cout<<"Entered element is ";
 	for(int i=0; i<n; i++)
 	{
-		cout<<a[i]<<" ";
+		cout<<a[i];
 	}
-
-	cout<<"After swapping ";
+	cout<<"Array in reverse order ";
 	for(int i=n; i>=0; i--)
 	{
-		cout<<a[i]<<" ";
+		cout<<a[i];
 	}
 }
