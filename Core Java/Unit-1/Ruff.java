@@ -1,12 +1,16 @@
+import java.util.Scanner;
 class student
 {
 	int rollno;
 	int m1,m2;
+	Scanner sc = new Scanner(System.in);
 	public void getdata()
 	{
-	rollno=101;
-	m1=56;
-	m2=45;
+	  System.out.println("\nEnter Roll No : ");
+	  rollno = sc.nextInt();
+	 
+	  m1= sc.nextInt();
+	  m2= sc.nextInt();
 	}
 	public void putdata()
 	{
@@ -17,7 +21,7 @@ class student
 
 }
 
-class Demo4
+class Demo6
 {
 	
 	public static void main(String args[])

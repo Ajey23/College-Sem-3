@@ -1,19 +1,27 @@
 //Java program to get user input in getdata() class and print on screen
+
+import java.util.Scanner;
 class student
 {
     int rollno;
-    int m1, m2;
+    int m1,m2;
+    Scanner sc= new Scanner(System.in);
     public void getdata()
     {
-        rollno=100;
-        m1=72;
-        m2=88;
+        System.out.println("\nEnter Roll No: ");
+        rollno=sc.nextInt();
+
+        System.out.println("\nEnter Mark1: ");
+        m1=sc.nextInt();
+
+        System.out.println("\nEnter Mark2: ");
+        m2=sc.nextInt();
     }
     public void putdata()
     {
-        System.out.println("\n Roll Number is : "+rollno);
-        System.out.println("\n Mark1 is : "+m1);
-        System.out.println("\n Mark2 is : "+m2);
+        System.out.println("\nRollno is: "+rollno);
+        System.out.println("\nMark 1 is: "+m1);
+        System.out.println("\nMark 2 is: "+m2);
     }
 }
 class getdata
