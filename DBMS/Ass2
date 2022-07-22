@@ -1,0 +1,24 @@
+CREATE TABLE Customers(CustomerId INT, FirstName VARCHAR(50), LastName VARCHAR(50), City VARCHAR(50), State VARCHAR(50));
+
+INSERT INTO Customers VALUE(10101, "John", "Gray", "Lynden", "Washington");
+INSERT INTO Customers VALUE(10298, "Leroy", "Brown", "Pinetop", "Arizona");
+INSERT INTO Customers VALUE(10299, "Elroy", "Keller", "Snoqulmie", "Washington");
+INSERT INTO Customers VALUE(10315, "Lisa", "Jones", "Oshkosh", "Wisconsin");
+INSERT INTO Customers VALUE(10325, "Ginger", "Schultz", "Pocatello", "Idaho");
+INSERT INTO Customers VALUE(10329, "Kelly", "Mendoza "Kailua", "Hawaii");
+INSERT INTO Customers VALUE(10330, "Shawn", "Dalton", "Cannon Beach", "Oregon");
+INSERT INTO Customers VALUE(10339, "Anthony", "Sanchez", "Winslow", "Arizon");
+
+CREATE TABLE Items_Ordered(CustomerId INT, Order_Date DATE, Item VARCHAR(50), Quantity INT, Price NUMERIC(6,2);
+
+INSERT INTO Items_Ordered VALUE(10330, '1998-06-30', "Pogo Stick", 1, 28.00); 
+INSERT INTO Items_Ordered VALUE(10101, '1999-06-30', "Raft", 1, 58.00); 
+INSERT INTO Items_Ordered VALUE(10298, '1996-07-01', "Skateboard", 1, 33.00); 
+INSERT INTO Items_Ordered VALUE(10101, '1998-07-01', "Life Vest", 4, 125.00); 
+INSERT INTO Items_Ordered VALUE(10299, '1999-07-06', "Parachute", 1, 1250.00); 
+INSERT INTO Items_Ordered VALUE(10339, '1998-07-27', "Umbrella", 1, 4.50); 
+INSERT INTO Items_Ordered VALUE(10449, '1995-08-13', "Unicycle", 1, 180.79); 
+INSERT INTO Items_Ordered VALUE(10439, '1996-07-14', "Ski Poles", 2, 25.50); 
+INSERT INTO Items_Ordered VALUE(10101, '1998-07-18', "Rain Coat", 1, 18.30); 
+
+
