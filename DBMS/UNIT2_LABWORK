@@ -1,0 +1,68 @@
+CREATE TABLE Customer(customer_id INT PRIMARY KEY, customer_name VARCHAR(15), address VARCHAR(15), country VARCHAR(15));
+
+INSERT INTO Customer VALUE(1, "Roy", "Delhi", "India");
+INSERT INTO Customer VALUE(2, "Mark", "Lverpool", "uk");
+INSERT INTO Customer VALUE(3, "Eric", "New York", "usa");
+INSERT INTO Customer VALUE(4, "alfred", "Chicago", "usa");
+INSERT INTO Customer VALUE(5, "Ivana", "Sydney", "australia");
+INSERT INTO Customer VALUE(6, "Amit", "Ahmedabad", "India");
+
+1) describe table Customer;
+			DESC Customer;
+
+2) update customer country as “USA” for customer_id 3 and 4;
+			UPDATE Customer 
+				SET country="USA"
+					WHERE customer_id =3 OR customer_id=4;
+
+
+3) alter address data type size as 50;
+			ALTER TABLE Customer
+				MODIFY address VARCHAR(50);
+
+
+4) Display all the rows of Customer table;
+			SELECT *FROM Customer;
+
+
+5) Display all the rows of Customer table order by customer name;
+			SELECT *FROM Customer
+				ORDER BY customer_name;
+
+
+6) Display all the customer order by Country as Asc order and customer name as desc order;
+			SELECT *FROM Customer ORDER BY country ASC, customer_name DESC;
+
+
+
+7) Insert this values (7,”Roy”,”Mumbai”,”India”);
+			INSERT INTO Customer VALUE(7, "Roy", "Mumbai", "India");
+
+
+
+8) Display distinct customer names from customer table;
+			SELECT DISTINCT customer_name
+				FROM Customer;
+
+
+9) Display the count of customers country wise;
+			SELECT country, COUNT(*)
+				FROM Customer
+					GROUP BY country;
+
+
+10) Display the count of customers Address wise;
+			SELECT address, COUNT(*)
+				FROM Customer
+					GROUP BY address;
+
+
+11) Display the count of customers country wise also order them as country wise asc;
+			SELECT country, COUNT(*)
+				FROM Customer
+					GROUP BY country
+						ORDER BY country ASC;
+
+
+
+
