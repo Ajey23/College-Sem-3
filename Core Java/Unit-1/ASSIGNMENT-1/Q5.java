@@ -6,13 +6,13 @@ class Q5
     public static void main(String args[])
     {
         int radius;
-        double pie=3.14,area;
+        double area;
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Enter the Radius of the circle: ");
         radius=sc.nextInt();
 
-        area= pie * radius * radius;
+        area= Math.PI * radius * radius;        //here im using Math.PI without initializing the value of PI in variable
         System.out.println("Area of the circle is: "+area);
     }
 }
