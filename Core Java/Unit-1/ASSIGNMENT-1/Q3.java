@@ -5,15 +5,13 @@ class Q3
 {
     public static void main(String args[])
     {
-        int num,square,cube;
+        int num;
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Enter the number: ");
         num=sc.nextInt();
 
-        square=num*num;
-        cube=num*num*num;
-        System.out.println("The Square is: "+square);
-        System.out.println("The Cube is: "+cube);
+        System.out.println("Square of "+ num + " is: "+ Math.pow(num,2));
+        System.out.println("Cube of "+ num + " is: "+ Math.pow(num,3));
     }
 }
