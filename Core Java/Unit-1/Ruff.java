@@ -19,5 +19,6 @@ class Ruff
 		{
 			System.out.println(arr[i]);
 		}
+	
 	}
 }
