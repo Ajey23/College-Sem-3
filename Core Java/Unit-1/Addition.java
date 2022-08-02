@@ -3,7 +3,7 @@ class Addition
 {
     public static void main(String args[])
     {
-        int x=50, y=50, add;
+        int x=50, y=60, add;
         add=x+y;
 
         System.out.println("Addition is : "+add);
